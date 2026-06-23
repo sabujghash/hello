@@ -9,6 +9,7 @@ interface range fa0/1-2
 switchport mode access
 switchport access vlan 10
 
+############ In router ############### 
 interface fa0/5
 swithport mode trunk
 exit
@@ -21,8 +22,12 @@ interface g0/0/0.10
 encapsulation dot1Q 10
 ip address 192.168.1.1 255.255.255.0
 
+interface g0/0/0.20
+encapsulation dot1Q 20
+ip address 192.168.1.1 255.255.255.0
 
-lab 7 - 
+
+lab 7  
 
 switchport mode trunk 
 switchport trunk allowed vlan 10,20,30
